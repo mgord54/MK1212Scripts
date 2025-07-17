@@ -460,11 +460,10 @@ function mkHRE:State_Check(faction_name)
 
     -- Handle vassalized "puppet" state
     if faction_state ~= "puppet" then
-        if emperor_faction:is_human()
-           and FACTIONS_TO_FACTIONS_VASSALIZED[self.emperor_key]
-           and HasValue(FACTIONS_TO_FACTIONS_VASSALIZED[self.emperor_key], faction_name)
-        then
-            self:Set_Faction_State(faction_name, "puppet", true)
+        if FACTIONS_TO_FACTIONS_VASSALIZED[self.emperor_key]
+            and HasValue(FACTIONS_TO_FACTIONS_VASSALIZED[self.emperor_key], faction_name)
+                then
+                self:Set_Faction_State(faction_name, "puppet", true)
             return
         end
 
@@ -483,13 +482,13 @@ function mkHRE:State_Check(faction_name)
         -- Dynamic stance-based loyalty adjustments
         if turn_number > 1 then
             if stance >= 3 then
-                faction_state = "loyal"
-            elseif stance > 0 then
-                faction_state = "neutral"
-            elseif stance == -1 then
-                faction_state = "discontent"
-            elseif stance <= -2 then
-                faction_state = "malcontent"
+                    faction_state = "loyal"
+                elseif stance >= 0 then
+                    faction_state = "neutral"
+                elseif stance == -1 then
+                    faction_state = "discontent"
+                elseif stance <= -2 then
+                    faction_state = "malcontent"
             end
             self:Set_Faction_State(faction_name, faction_state, faction_state ~= "neutral")
 

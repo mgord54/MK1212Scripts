@@ -1,26 +1,50 @@
-# MK1212Scripts
-Scripts created for Medieval Kingdoms 1212 AD by the grand; DETrooper, with minor noob maintenance by Tycherious.
+Scripts for Medieval Kingdoms 1212 AD
+Created by the grand DETrooper, with noobish maintenance by Tycherious.
+Built using the Rome 2 Total Realism Scripting Toolkit, courtesy of the R2TR development team.
 
-Uses the Rome 2 Total Realism Scripting Toolkit courtesy of the R2TR development team.
+🛠️ 30/06/2025 Update – Change List
+🛑 Civil War Fixes
 
-30/6/2025 Update Change list:
-Fixed the civil war debuff of Abbasid and Epirus does not get removed when the civil war ends.
-Fixed Seljuks faction attribute bug (+2 experience for missile cav recruit now working)
-Fixed muhtasib minister bug ( +2 sanitation and +%10 commerce traits now working)
-Fixed Startup menu bug saying ‘missing pack files’, now this feature is working again and will notify if a pack is missing properly.
-HRE Voting System with same mechanics - but reworked functions; see:(transparent HRE Mechanics)
-HRE Election System – Transitions Occur for title and Frankfurt (Empire Capitol).
-HRE dynamic naming – ‘Holy Roman Empire’ faction name transition fixed.
-Fixed the three unique HRE dilemmas that occur for the Emperor faction that shape loyal/disloyal relationships within the HRE system.
-Fixed pretender system, the Pope can again elect pretender catholic factions that are able to engage with the HRE mechanics.
-Added Election Event Message Pop-up with image and text description after a new Emperor is elected, to inform the player.
-Liberate member state as Holy Roman Emperor successfully organises automatic military alliance and loyal HRE member state condition.
-HRE minor Faction, Puppet State Fixed.
-HRE Reform #1 now correctly limited to 6 Prince Elector States + Emperor as voters in HRE Panel instead of having 9.
+Fixed issue where the civil war debuff for Abbasid and Epirus was not being removed when the war ended.
 
-17/7/2025 Update Change list: 
-Made slight logic improvements to;
-mechanics/hre/events.lua
-mechanics/hre/factions.lua
-Also made a few retarded mistakes (still getting use to github) and then fixed them in the final commit. 
+🎯 Faction Attribute Fixes
+
+Seljuks: Fixed faction attribute bug — +2 experience for recruited missile cavalry now applies correctly.
+
+Muhtasib Minister: Fixed trait bug — now properly grants +2 sanitation and +10% commerce bonuses.
+
+🧰 Startup Bug Fix
+
+Fixed a bug in the startup menu that incorrectly showed “missing pack files.” This feature now works as intended and will correctly notify users when packs are missing.
+
+🏛️ Holy Roman Empire (HRE) Mechanics
+
+HRE Voting System: Core mechanics retained, but function logic restructured. See: Transparent HRE Mechanics.
+
+HRE Elections: Now triggers title and capital transitions upon electing a new Emperor (e.g., Frankfurt becomes imperial seat).
+
+Dynamic Naming: “Holy Roman Empire” faction name now updates correctly based on election state.
+
+Fixed three unique Emperor dilemmas that influence internal HRE loyalty and disloyalty mechanics.
+
+Pretender System: The Pope can now elect pretender Catholic factions to engage with HRE mechanics again.
+
+Election Events: Added popup message with image and text to inform the player after a new Emperor is elected.
+
+Liberating an HRE member state as Emperor now automatically creates a military alliance and flags the state as loyal.
+
+Puppet state logic for minor HRE factions fixed.
+
+HRE Reform #1: Now correctly limited to 6 Prince-Electors + Emperor as voters (was improperly including 9 factions).
+
+🔧 17/07/2025 Update – Post Fedacking Review
+✅ stance >= 0 now properly includes stance value 0 in the neutral range (0–2), ensuring no unintended exclusions.
+
+✅ Removed unnecessary is_human() check in puppet-state logic — AI Emperors can now assign puppet states properly.
+
+✅ Codebase structure and indentation improved for clarity and consistency.
+
+
+
+
 

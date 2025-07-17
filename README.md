@@ -1,5 +1,5 @@
 # MK1212Scripts
-Scripts created for Medieval Kingdoms 1212 AD by DETrooper.
+Scripts created for Medieval Kingdoms 1212 AD by the grand; DETrooper, with minor noob maintenance by Tycherious.
 
 Uses the Rome 2 Total Realism Scripting Toolkit courtesy of the R2TR development team.
 
@@ -18,7 +18,7 @@ Liberate member state as Holy Roman Emperor successfully organises automatic mil
 HRE minor Faction, Puppet State Fixed.
 HRE Reform #1 now correctly limited to 6 Prince Elector States + Emperor as voters in HRE Panel instead of having 9.
 
-17/7/2025
+17/7/2025 Update Change list: 
 Made slight logic improvements to;
 mechanics/hre/events.lua
 mechanics/hre/factions.lua

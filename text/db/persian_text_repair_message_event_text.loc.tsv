@@ -1,0 +1,5 @@
+key	text	tooltip
+#Loc;1;text/db/persian_text_repair_message_event_text.loc		
+message_event_text_text_mk_event_persian_empire_formed_title	The Crown of the Shahanshah	true
+message_event_text_text_mk_event_persian_empire_formed_secondary	By the edge of your swords you have swept from Baghdad’s walls to the gardens of Shiraz, from Hamadan’s mountain passes to Herat’s ramparts—restoring unity to ancient Persia. Proclaimed Shahanshah, your court in Shiraz now glows with poets and viziers, and Ahvaz’s palaces ring with tribute once more. May your reign endure as long as the Zagros sun, and your name echo across every land you’ve reclaimed.	true
+message_event_text_text_mk_event_persian_empire_formed_primary	Proclaimed Shahanshah	true
